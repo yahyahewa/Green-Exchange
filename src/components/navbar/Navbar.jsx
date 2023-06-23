@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import NavItem from "./NavItem";
 import Logo from "./Logo";
 import DropDownMenu from "./DropDownMenu";
-// import LinksPage from "./LinksPage";
-// import Logo from "./Logo";
+
 
 const LINKS = [
   { title: 'Home', path: '/' },
