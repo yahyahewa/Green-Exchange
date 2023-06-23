@@ -16,7 +16,7 @@ function LinksPage({ getStared, isOpen }) {
         <Link to={"/fq"}>F&Q</Link>
       </div>
       <Link
-        to={"/getstarted"}
+        to={"/login"}
         className="capitalize bg-jade-600 text-white px-3 py-2 rounded-sm"
       >
         {getStared}

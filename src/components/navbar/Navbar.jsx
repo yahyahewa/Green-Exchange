@@ -30,9 +30,9 @@ const NavbarComponent = ({ toggleDropDown }) => {
               </NavItem>
             ))}
           </ul>
-          <button className="btn btn-primary py-1  rounded-md btn-md bg-green-700/80 text-neutral-100 border-0  hover:bg-green-700 transition-all">
+          <Link to={"/login"} className="btn btn-primary py-1  rounded-md btn-md bg-green-700/80 text-neutral-100 border-0  hover:bg-green-700 transition-all">
             Get Started
-          </button>
+          </Link>
         </div>
       </div>
     </nav>
