@@ -1,8 +1,11 @@
+import Button from "../components/Button"
 
 
 const HomePage = () => {
   return (
-    <div>Home Done</div>
+    <div>
+      <Button/>
+    </div>
   )
 }
 
