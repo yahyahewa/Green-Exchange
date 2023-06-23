@@ -1,24 +1,25 @@
 
+
 import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import Navbar from './components/navbar/Navbar';
 import SingleItem from './components/item/SingleItem';
 
 function App() {
-
-
   return (
     <>
+
       <main>
         <Navbar />
         <Routes>
-
+ <Route exact path="/login" element={<Login />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/product/:id" element={<SingleItem />} />
         </Routes>
       </main>
+
     </>
-  )
+  );
 }
 
 export default App
@@ -46,3 +47,4 @@ export default App
       //   </Route>
       // </Routes>
       // <Fotter />
+
