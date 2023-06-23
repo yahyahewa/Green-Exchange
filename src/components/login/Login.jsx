@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import {
   useLoginMutation,
@@ -84,10 +83,12 @@ const Login = () => {
                   Sign in
                 </button>
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                  Don’t have an account yet?{" "}
+                  <Link to={""}>
+                    Don’t have an account yet?{" "}
+                  </Link>
                   <Link
                     href="#"
-                    to="/Signup"
+                    to="/signup"
                     className="font-medium text-[#00AA7A] hover:underline dark:text-[#00674a]"
                   >
                     Sign up

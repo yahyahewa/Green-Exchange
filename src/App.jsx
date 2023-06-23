@@ -11,6 +11,7 @@ import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import Navbar from './components/navbar/Navbar';
 import SingleItem from './components/item/SingleItem';
+import Login from './components/login/Login';
 
 
 function App() {
@@ -28,9 +29,17 @@ function App() {
       <main>
         <Navbar />
         <Routes>
+
+          <Route path="/login" exact element={<Login />} />
+          <Route path="/signup" exact element={<Login />} />
+
+
  <Route exact path="/login" element={<Login />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/product/:id" element={<SingleItem />} />
+          <Route path="/" element={<HomePage />} />
+
+
         </Routes>
       </main>
 
