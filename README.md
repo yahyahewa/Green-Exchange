@@ -14,4 +14,4 @@ Install dependencies: npm install
 # Technologies Used
 React.js for the frontend
 Tailwind CSS for styling
-Firebase for the backend and database
+.NET Core Framework for the Backend
