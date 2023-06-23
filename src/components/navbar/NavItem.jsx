@@ -8,8 +8,8 @@ const NavItem = ({ href, children, toggleDropDown }) => {
       <NavLink
         className={({ isActive }) =>
           isActive
-            ? 'text-green-500 transition  text-sm'
-            : 'text-neutral-500/75 hover:text-neutral-500 hover:scale-105 transition  text-sm'
+            ? 'text-green-500 transition text-md font-bold sm:text-base '
+            : 'text-neutral-500/75 hover:text-neutral-500 hover:scale-105 transition text-md font-bold  sm:text-base'
         }
         to={href}
         onClick={toggleDropDown}>
