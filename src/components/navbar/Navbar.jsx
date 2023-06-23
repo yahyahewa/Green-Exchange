@@ -14,7 +14,7 @@ const LINKS = [
 ];
 
 const NavbarComponent = ({ toggleDropDown }) => {
-  // const { currentUser } = UserAuth();
+  /
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light flex justify-between items-center px-10 py-4 lg:max-w-[85rem] mx-auto ">
       <Link to="/" className="font-bold  text-md text-neutral-600">
