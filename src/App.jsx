@@ -1,13 +1,29 @@
 
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import Login from "./components/login/Login.jsx";
+import Signup from "./components/signup/Signup.jsx";
+import FAQPage from "./pages/FAQPage";
+
+
 
 import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import Navbar from './components/navbar/Navbar';
 import SingleItem from './components/item/SingleItem';
 
+
 function App() {
   return (
     <>
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/signup" element={<Signup />} />
+        <Route exact path="/FAQPage" element={<FAQPage />} />
+      </Routes>
+
 
       <main>
         <Navbar />
@@ -24,27 +40,4 @@ function App() {
 
 export default App
 
-
-      // <Routes>
-      //   <Route path="/" Component={Home} />
-      //   <Route path="/product" Component={Productspage} />
-      //   <Route path="/product/:id" Component={Singleitem} />
-      //   <Route path="/contact" Component={Contact} />
-      //   <Route path="/about" Component={About} />
-      //   <Route path="/login" Component={Login} />
-      //   <Route path="*" Component={Notfound} />
-      //   <Route path="/checkout" Component={Checkout} />
-      //   <Route path="/register" Component={Regeister} />
-
-      //   <Route path="/admin" Component={Dashbord}>
-      //     <Route path="products" Component={Products}>
-      //       <Route index Component={productlist} />
-      //       <Route path="create-product" Component={Createproduct} />
-      //     </Route>
-
-      //     <Route path="summery" Component={Summery} />
-      //     <Route path="users" Component={User} />
-      //   </Route>
-      // </Routes>
-      // <Fotter />
 
