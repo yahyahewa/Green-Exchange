@@ -10,14 +10,14 @@ import SingleItem from "./pages/SingleItem";
 import AddProduct from "./components/profile/AddProduct";
 import FAQPage from "./pages/FAQPage";
 import Profile from "./pages/profile"
-
+import Fotter from "./components/Fotter";
 
 function App() {
   return (
     <>
 
       <main>
-        <Navbar/>
+        <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route exact path="/login" element={<Login />} />
@@ -30,7 +30,7 @@ function App() {
           <Route path="/profile/:id" element={<Profile />} />
           
         </Routes >
-
+        <Fotter />
       </main >
 
 
