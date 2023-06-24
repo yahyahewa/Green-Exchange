@@ -13,18 +13,12 @@ import Login from './components/login/Login';
 import FAQPage from "./pages/FAQPage";
 import Signup from "./components/signup/Signup.jsx";
 import About from './pages/About';
+import ItemPage from './components/item/ItemPage';
 
 
 function App() {
   return (
     <>
-
-      {/* <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route exact path="/login" element={<Login />} />
-
-      </Routes> */}
-
 
       <main>
         <Navbar />
@@ -38,6 +32,7 @@ function App() {
           <Route exact path="/login" element={<Login />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/product/:id" element={<SingleItem />} />
+          <Route path="/items/" element={<ItemPage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
 
