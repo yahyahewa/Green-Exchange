@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function addProduct() {
@@ -9,7 +9,6 @@ function addProduct() {
     "categorey1",
     "categorey1",
   ];
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [formData, setFormData] = useState({
     name: "",
     typeuse: "",
@@ -47,7 +46,7 @@ function addProduct() {
     <section className="w-full max-w-7xl mt-10">
       <div className="w-full pl-3">
         <Link
-          to="/items"
+          to="/product"
           className="bg-jade-600 text-white rounded-md px-3 py-2"
         >
           Products

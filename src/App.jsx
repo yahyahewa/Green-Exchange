@@ -27,16 +27,6 @@ function App() {
           <Route path="/profile/:username" element={<Profile />} />
 
 
-
-          {/* <Route path="/admin" element={Dashbord}>
-            <Route path="products" element={Products}> */}
-          {/* <Route index element={productlist} /> */}
-          {/* </Route>
-
-            <Route path="summery" Component={Summery} />
-            <Route path="users" Component={User} />
-          </Route> */}
-
         </Routes>
 
       </main>
