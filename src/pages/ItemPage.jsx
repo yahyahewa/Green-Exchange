@@ -83,6 +83,7 @@ function ItemPage() {
         {item.map((value) => {
           return (
             <Card
+              key={value.id}
               icone={value.icone}
               userName={value.userName}
               datetime={value.dateTime}
