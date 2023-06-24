@@ -1,4 +1,4 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function addProduct() {
@@ -47,7 +47,7 @@ function addProduct() {
     <section className="w-full max-w-7xl mt-10">
       <div className="w-full pl-3">
         <Link
-          to="/product"
+          to="/items"
           className="bg-jade-600 text-white rounded-md px-3 py-2"
         >
           Products

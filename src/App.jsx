@@ -14,7 +14,7 @@ import Profile from './components/profile/profile'
 function App() {
   return (
     <>
-      <main>
+      <main className="overflow-hidden ">
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
