@@ -1,8 +1,20 @@
 
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs"
+import { useParams } from 'react-router';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+import {Link} from 'react-router-dom'
+
 
 const OrderPage = () => {
+    
+  const { itemId } = useParams();
+
+  const location = useLocation();
+
+  useEffect(() => { }, [itemId]);
+  
     return(
         <div className="py-14 px-4 md:px-6 2xl:px-20 2xl:container 2xl:mx-auto">
       <div className="flex justify-start item-start space-y-2 flex-col">
@@ -23,7 +35,7 @@ const OrderPage = () => {
               <div className="pb-4 md:pb-8 w-full md:w-70 ">
                 <img
                   className="w-full hidden md:block rounded-lg"
-                  src="https://i.ibb.co/84qQR4p/Rectangle-10.png"
+                  src={location.state.itemData.image}
                   alt="dress"
                 />
 
@@ -31,16 +43,16 @@ const OrderPage = () => {
               <div className="border-b border-gray-200 md:flex-row flex-col flex justify-between items-start w-full pb-8 space-y-4 md:space-y-0">
                 <div className="w-full flex flex-col justify-start items-start space-y-8">
                   <h3 className="text-xl  xl:text-2xl font-semibold leading-6 text-gray-800">
-                    Product name
+                  {location.state.itemData.productName}
                   </h3>
                   <div className="flex justify-start items-start flex-col space-y-2">
                     <p className="text-sm  leading-none text-gray-800">
 
-                      category:
-                      <span>{" catagory name"}</span>            </p>
+                      category: {location.state.itemData.category}
+                             </p>
                     <p className="text-sm  leading-none text-gray-800">
 
-                      Situation:{<span className="text-sm rounded-sm p-1 px-6 bg-jade-900 text-white  leading-6">
+                      Situation:{<span className="text-sm rounded-sm p-1 px-6 bg-jade-900 text-gray-500  leading-6">
                         Good
                       </span>}
                     </p>
@@ -48,14 +60,14 @@ const OrderPage = () => {
                     <p className="text-sm  leading-none text-gray-800">
                       <span className="text-gray-600">
                         Details:<br />
-                      </span>{" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure maxime cupiditate voluptatibus quibusdam, mollitia nostrum suscipit porro reprehenderit facilis minima quisquam temporibus officia saepe sunt delectus, alias ducimus perspiciatis earum."}
+                      </span>{location.state.itemData.details}
 
                     </p>
                   </div>
                 </div>
                 <div className="flex justify-end   space-x-8 items-start w-full">
 
-                  <p className="text-base justify-end rounded-sm p-1 bg-jade-900 text-white xl:text-lg leading-6">
+                  <p className="text-base justify-end rounded-sm p-1 bg-jade-900 text-gray-600 xl:text-lg leading-6">
                     Delevired
                   </p>
                 </div>
@@ -72,10 +84,14 @@ const OrderPage = () => {
           <div className="flex flex-col md:flex-row xl:flex-col justify-start items-stretch h-full w-full md:space-x-6 lg:space-x-8 xl:space-x-0">
             <div className="flex flex-col justify-start items-start flex-shrink-0">
               <div className="flex justify-center w-full md:justify-start items-center space-x-4 py-8 border-b border-gray-200">
-                <img src="https://i.ibb.co/5TSg7f6/Rectangle-18.png" alt="avatar" />
+              <img
+              className="w-[60px] sm:w-12 sm:h-12 lg:w-9 lg:h-9  mask mask-circle object-cover object-center "
+              src={location.state.itemData.icone}
+              alt=""
+            />
                 <div className="flex justify-start items-start flex-col space-y-2">
                   <p className="text-base  font-semibold leading-4 text-left text-gray-800">
-                    Donator Name
+                    {location.state.itemData.userName}
                   </p>
 
                 </div>
@@ -100,7 +116,11 @@ const OrderPage = () => {
                   </p>
                   <p className="w-48 lg:w-full  xl:w-48 text-center md:text-left text-sm leading-5 text-gray-600">
                     Donator location                  </p>
-                </div>
+                                </div>
+                <Link className='className="w-full h-12 p-2 mr-4 bg-green-600 font-bold text=4xl  text-gray-50 rounded-md hover:bg-green-700 "'   to={`/success`}>
+                  
+                    Order
+                 </Link>
 
               </div>
 

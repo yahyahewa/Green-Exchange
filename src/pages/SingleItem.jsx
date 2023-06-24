@@ -2,6 +2,7 @@
 import { useParams } from 'react-router';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import {  Link } from 'react-router-dom';
 
 const SingleItem = () => {
 
@@ -109,9 +110,10 @@ const SingleItem = () => {
 
               <div className="flex flex-wrap items-center  ">
                 <div className="mb-4 mr-4 lg:mb-0 w-lg  w-full">
-                  <button className="w-full h-12 p-2 mr-4 bg-green-600 font-bold  text-gray-50 rounded-md hover:bg-green-700 ">
+                <Link className='className="w-full h-12 p-2 mr-4 bg-green-600 font-bold  text-gray-50 rounded-md hover:bg-green-700 "'  state={{ itemData: location.state.itemData }} to={`/order/${location.state.itemData.id}`}>
+                  
                     Order
-                  </button>
+                 </Link>
                 </div>
 
 

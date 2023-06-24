@@ -15,6 +15,7 @@ function ItemPage() {
       place: "erbil",
       category: "home product",
       status: "like new",
+      details:"this product is donated by this person"
     },
     {
       icone:"https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
@@ -23,6 +24,10 @@ function ItemPage() {
       dateTime: "11/3/2023",
       image: "https://5.imimg.com/data5/OL/RO/UA/SELLER-6786482/economy-chair-500x500-500x500.png",
       productName: "plastic chair",
+      place: "erbil",
+      category: "home product",
+      status: "like new",
+      details:"this product is donated by this person"
     },
     {
       icone: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
@@ -30,6 +35,10 @@ function ItemPage() {
       dateTime: "10/10/2022",
       image: "https://c8.alamy.com/comp/2AMAT0P/pile-of-second-hand-clothes-stack-of-neatly-folded-old-clothing-with-a-white-background-2AMAT0P.jpg",
       productName: "used clothes",
+      place: "erbil",
+      category: "home product",
+      status: "like new",
+      details:"this product is donated by this person"
     },
     {
       icone: "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60"
@@ -38,6 +47,10 @@ function ItemPage() {
       dateTime: "10/10/2022",
       image: "https://media.karousell.com/media/photos/products/2018/08/19/ikea_queen_size_bed_frame_second_hand_1534673298_adcfe26a_progressive.jpg ",
       productName: "sleeping bed",
+      place: "erbil",
+      category: "home product",
+      status: "like new",
+      details:"this product is donated by this person"
     },
     {
       icone: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
@@ -45,6 +58,10 @@ function ItemPage() {
       dateTime: "10/10/2022",
       image:"https://media.istockphoto.com/id/620006890/photo/toy-car-truck.jpg?s=612x612&w=0&k=20&c=m4UBEwLfrG55Zc0S7Y2mbqMraIm9JtzOp_u5tEeNe6U=",
       productName: "childs car toy",
+      place: "erbil",
+      category: "home product",
+      status: "like new",
+      details:"this product is donated by this person"
     },
     
   ];
