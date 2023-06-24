@@ -28,6 +28,7 @@ function App() {
           <Route path="/items/:id" element={<SingleItem />} />
           <Route path="/about" element={<About />} />
           <Route path="/profile/:id" element={<Profile />} />
+          
         </Routes >
 
       </main >

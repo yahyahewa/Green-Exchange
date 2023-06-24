@@ -1,5 +1,9 @@
 import Card from "../components/item/Card";
+import {  Link } from 'react-router-dom';
 function ItemPage() {
+
+
+    
   const item = [
     {
       icone:
@@ -75,7 +79,14 @@ function ItemPage() {
     },
   ];
   return (
-    <section className="w-full">
+    <section className="w-full py-16">
+      <div className="flex justify-between items-center  mb-10 px-10 ">
+        <div className="flex items-center gap-2 font-bold  text-sm">
+        <h2 className="text-neutral-500 ">donated Items: </h2>
+        <span className="bg-green-500/30 text-green-500/90 px-3 py-1 rounded">{item.length}</span>
+        </div>
+        <Link to={'/create'}><button  className=' px-3 py-1 animate-pulse rounded text-base bg-green-700/80 text-neutral-100 border-0  hover:bg-green-700 '>donate</button></Link>
+      </div>
       <section
         className="max-w-7xl mx-auto flex justify-center flex-wrap gap-6 
     "

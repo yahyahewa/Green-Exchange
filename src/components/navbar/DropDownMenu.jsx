@@ -6,11 +6,10 @@ import Humberger from "./Humberger";
 
 const LINKS = [
   { title: "Home", path: "/" },
-  { title: "Items", path: "/Items" },
-  { title: "About", path: "/foundItems" },
-  { title: "F&Q", path: "/faq" },
+  { title: "Items", path: "/items" },
+  { title: "About", path: "/about" },
+  { title: "F&Q", path: "/FAQPage" },
 ];
-
 function DropDownMenu() {
   const [opened, { open, close }] = useDisclosure(false);
 
