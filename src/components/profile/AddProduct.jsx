@@ -119,6 +119,7 @@ function addProduct() {
               ))}
             </div>
             <input
+              multiple={true}
               onChange={handleImageUpload}
               type="file"
               name="image"
