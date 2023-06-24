@@ -15,3 +15,6 @@ Install dependencies: npm install
 React.js for the frontend
 Tailwind CSS for styling
 .NET Core Framework for the Backend
+
+# Backend Entry Point
+http://hejoc59168-001-site1.dtempurl.com/swagger/index.html
