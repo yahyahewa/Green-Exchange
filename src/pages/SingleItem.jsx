@@ -1,5 +1,17 @@
 
+import { useParams } from 'react-router';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+
 const SingleItem = () => {
+
+  const { itemId } = useParams();
+
+  const location = useLocation();
+
+  useEffect(() => { }, [itemId]);
+  
+
   return (
     <section className="py-20 overflow-hidden bg-white font-poppins ">
       <div className="max-w-6xl px-4 py-4 mx-auto lg:py-8 md:px-6">
@@ -10,13 +22,13 @@ const SingleItem = () => {
               {/* Main image  */}
               <div className="relative mb-6 lg:mb-10  hover:transition duration-300 ease-in-out hover:scale-110" style={{ height: 450 }}>
                 <img
-                  src="https://thumbs.dreamstime.com/b/alpaca-funny-hair-stands-out-blue-sky-background-detailed-headshot-which-allows-you-to-clearly-54343701.jpg"
+                  src={location.state.itemData.image}
                   alt=""
                   className="object-cover object-center w-full h-full  rounded-xl "
                 />
               </div>
               {/* bottom images */}
-              <div className="flex-wrap flex ">
+              {/* <div className="flex-wrap flex ">
                 <div className="w-1/4 p-2">
                   <a
                     href="#"
@@ -53,7 +65,7 @@ const SingleItem = () => {
                     />
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
 
 
@@ -65,10 +77,10 @@ const SingleItem = () => {
               {/* image deatails */}
               <div className="pb-6 mb-8 border-b  border-jade-200 ">
                 <span className="text-xl font-bold text-gray-900 ">
-                  Donator Name
+                {location.state.itemData.productName}
                 </span>
                 <h2 className="max-w-xl mt-2 mb-6 text-lg font-bold text-gray-700">
-                  Product Name
+                {location.state.itemData.userName}
                 </h2>
                 <div className="flex flex-wrap items-center mb-6">
                   <ul className="flex mb-4 mr-2 lg:mb-0">
@@ -77,26 +89,23 @@ const SingleItem = () => {
                     className="mb-4 text-lg  text-gray-500  lg:mb-0"
                     href="#"
                   >
-                    1/1/2023
+                   {location.state.itemData.dateTime}
                   </div>
                 </div>
                 <p className="max-w-md mb-8 text-gray-700 ">
                   Product Deatails
                 </p>
 
-                <p className="inline-block text-2xl font-semibold text-gray-700  ">
-                  <span>Loacation</span>
-
+                <p className="inline-block  text-gray-700  ">
+                  <span className='text-2xl font-semibold'>Loacation</span>
+                  <p>{location.state.itemData.dateTime}</p>
                 </p>
               </div>
               <div className="mb-8 ">
-                <h2 className="mb-2 text-xl font-bold text-gray-800 rounded-sm ">Category</h2>
+              <span className='text-2xl font-semibold'>Category</span>
+                  <p>{location.state.itemData.category}</p>
               </div>
 
-              <div className="pb-6 mb-8 border-b    border-jade-600 ">
-                <h2 className="mb-2 text-xl font-bold text-gray-800 rounded-sm ">Like New</h2>
-
-              </div>
 
               <div className="flex flex-wrap items-center  ">
                 <div className="mb-4 mr-4 lg:mb-0 w-lg  w-full">

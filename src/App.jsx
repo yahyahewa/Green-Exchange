@@ -11,6 +11,7 @@ import AddProduct from "./components/profile/AddProduct";
 import FAQPage from "./pages/FAQPage";
 import Profile from "./pages/profile"
 import Fotter from "./components/Fotter";
+import OrderPage from "./pages/OrderPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/items/:id" element={<SingleItem />} />
           <Route path="/about" element={<About />} />
           <Route path="/profile/:id" element={<Profile />} />
+          <Route path="/order" element={<OrderPage />} />
           
         </Routes >
         <Fotter />

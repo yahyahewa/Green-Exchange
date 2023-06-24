@@ -3,6 +3,7 @@ import { useDisclosure } from "@mantine/hooks";
 // import { useDisclosure } from '@mantine/hooks';
 import { Drawer, Group } from "@mantine/core";
 import Humberger from "./Humberger";
+import {Link} from "react-router-dom";
 
 const LINKS = [
   { title: "Home", path: "/" },
@@ -35,6 +36,11 @@ function DropDownMenu() {
               </NavItem>
             ))}
           </ul>
+          <div  className="flex justify-center mt-10" onClick={close}>
+          <Link to={"/login"} className="btn btn-primary py-1  rounded-md btn-md bg-green-700/80 text-neutral-100 border-0  hover:bg-green-700 transition-all">
+            Get Started
+          </Link>
+          </div>
         </Drawer.Body>
         {/* Drawer content */}
       </Drawer>
