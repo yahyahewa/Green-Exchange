@@ -1,5 +1,5 @@
-import React from "react";
-import LeftAside from "./leftAside";
+
+import LeftAside from "../components/profile/leftAside";
 function profile() {
   return (
     <section className="w-[90%] max-w-7xl m-auto">

@@ -9,6 +9,7 @@ import Navbar from "./components/navbar/Navbar";
 import SingleItem from "./pages/SingleItem";
 import AddProduct from "./components/profile/AddProduct";
 import FAQPage from "./pages/FAQPage";
+import Profile from "./pages/profile"
 
 
 function App() {
@@ -24,12 +25,9 @@ function App() {
           <Route exact path="/FAQPage" element={<FAQPage />} />
           <Route exact path="/items" element={<ItemPage />} />
           <Route exact path="/create" element={<AddProduct />} />
-          <Route path="/product/:id" element={<SingleItem />} />
-          <Route path="/items/" element={<ItemPage />} />
-          <Route path="/" element={<HomePage />} />
+          <Route path="/items/:id" element={<SingleItem />} />
           <Route path="/about" element={<About />} />
-
-
+          <Route path="/profile/:id" element={<Profile />} />
         </Routes >
 
       </main >
