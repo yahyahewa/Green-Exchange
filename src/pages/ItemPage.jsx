@@ -83,11 +83,7 @@ function ItemPage() {
         {item.map((value) => {
           return (
             <Card
-<<<<<<< HEAD:src/pages/ItemPage.jsx
-              key={value.id}
-=======
             key={value.id}
->>>>>>> origin/ehsan:src/components/item/ItemPage.jsx
               icone={value.icone}
               userName={value.userName}
               datetime={value.dateTime}
