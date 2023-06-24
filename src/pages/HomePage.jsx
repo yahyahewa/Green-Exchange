@@ -1,4 +1,4 @@
-
+import {Link} from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -19,7 +19,7 @@ const HomePage = () => {
         </div>
         <div className="flex flex-col justify-center items-center gap-8 md:gap-10">
           <h2 className="text-xl px-5 sm:text-3xl text-to font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-neutral-800 to-neutral-400">You have something to donate?</h2>
-          <button className='btn btn-primary rounded-full bg-green-700/80 text-neutral-100 border-0 animate-bounce hover:bg-green-700 transition-all md:btn-lg'>donate your thing</button>
+        <Link to={'/create'}> <button className='btn btn-primary rounded bg-green-700/80 text-neutral-100 border-0 animate-bounce hover:bg-green-700 transition-all md:btn-lg'>donate your thing</button></Link> 
         </div>
       </section>
     </main>
