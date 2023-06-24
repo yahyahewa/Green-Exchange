@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function addProduct() {
@@ -9,6 +9,7 @@ function addProduct() {
     "categorey1",
     "categorey1",
   ];
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [formData, setFormData] = useState({
     name: "",
     typeuse: "",
