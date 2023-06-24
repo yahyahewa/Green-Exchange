@@ -1,5 +1,4 @@
-import React from "react";
-import Card from "./Card";
+import Card from "../components/item/Card";
 function ItemPage() {
   const item = [
     {
@@ -84,6 +83,7 @@ function ItemPage() {
         {item.map((value) => {
           return (
             <Card
+              key={value.id}
               icone={value.icone}
               userName={value.userName}
               datetime={value.dateTime}
@@ -98,7 +98,7 @@ function ItemPage() {
           className="w-8 h-8 border rounded-md flex items-center 
         justify-center py-3 px-3 hover:bg-slate-400 ease-in-out duration-300"
         >
-          <i class="fa-solid fa-angle-left fa-xl"></i>
+          <i className="fa-solid fa-angle-left fa-xl"></i>
         </span>
         <span
           className="w-8 h-8 border rounded-md flex items-center 
@@ -122,7 +122,7 @@ function ItemPage() {
           className="w-8 h-8 border rounded-md flex items-center 
         justify-center py-3 px-3 hover:bg-slate-400 ease-in-out duration-300"
         >
-          <i class="fa-solid fa-angle-right fa-xl"></i>
+          <i className="fa-solid fa-angle-right fa-xl"></i>
         </span>
       </article>
     </section>
